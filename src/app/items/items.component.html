@@ -1,0 +1,14 @@
+<div class="columns">
+    <div class="column">
+        <h2>Item List</h2>
+
+        <ul class="items">
+            <li *ngFor="let item of items | async" (click)="onSelect(item)" [class.selected]="item === selectedItem">
+                <span class="badge">{{5}}</span> {{item.name}}
+            </li>
+        </ul>
+    </div>
+    <div class="column">
+        <app-item-detail [item]="selectedItem"></app-item-detail>
+    </div>
+</div>

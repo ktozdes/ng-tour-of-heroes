@@ -1,0 +1,22 @@
+<div *ngIf="hero">
+	<div class="card">
+		<div class="card-image">
+			<figure class="image is-4by3">
+			<img src="{{hero.image}}" alt="Placeholder image">
+			</figure>
+		</div>
+		<div class="card-content">
+			<div class="media">
+			<div class="media-content">
+				<p class="title is-4">{{hero.name | uppercase}}</p>
+			</div>
+			</div>
+		
+			<div class="content">
+			{{hero.description}}
+			<br/>
+			<a href="#">{{hero.type}}</a>
+			</div>
+		</div>
+	</div>
+</div>

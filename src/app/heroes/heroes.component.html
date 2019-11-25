@@ -1,0 +1,14 @@
+<div class="columns">
+	<div class="column">
+		<h2>Hero List</h2>
+
+		<ul class="heroes">
+			<li *ngFor="let hero of heroes | async" (click)="onSelect(hero)" [class.selected]="hero === selectedHero">
+				<span class="badge">{{5}}</span> {{hero.name}}
+			</li>
+		</ul>
+	</div>
+	<div class="column">
+		<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+	</div>
+  </div>

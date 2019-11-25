@@ -44,3 +44,8 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# custom directories and files
+/environments
+/environments
+firebase.json
