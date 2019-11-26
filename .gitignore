@@ -46,5 +46,5 @@ testem.log
 Thumbs.db
 
 # custom directories and files
-/src/environments
+/environments
 firebase.json
